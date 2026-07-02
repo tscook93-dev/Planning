@@ -1,32 +1,29 @@
-# React + TypeScript + Vite
+# 💩 Sewer Surfer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A mobile-first endless runner: flush a turd down the toilet and surf the sewer, Subway-Surfers style. Dodge rats, low pipes and blockages across three lanes, snack on flies for points, and see how far you get before you're flushed out.
 
-Currently, two official plugins are available:
+Built as an installable PWA with React + Canvas 2D — add it to your home screen for a full-screen, app-like experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Play
 
-## React Compiler
+- **Swipe left / right** — switch pipes (lanes)
+- **Swipe up** — jump
+- **Swipe down** — slide
+- Keyboard (desktop): arrow keys / WASD, space to jump
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Development
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev      # start dev server
+npm run build    # type-check + production build
+npm run lint      # oxlint
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Tech
+
+- React + TypeScript + Vite
+- Canvas 2D rendering with a pseudo-3D trapezoid projection for the tunnel
+- Tailwind CSS for the HUD/menu overlays
+- `vite-plugin-pwa` for offline support and home-screen installs
+- Procedurally drawn sprites and synthesized WebAudio sound effects — no external art or audio assets

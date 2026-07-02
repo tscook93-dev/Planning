@@ -10,13 +10,13 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg'],
+      includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Holiday Planner',
-        short_name: 'Holiday',
-        description: 'Plan your international holiday — itinerary, packing, budget & docs',
-        theme_color: '#4f46e5',
-        background_color: '#f9fafb',
+        name: 'Sewer Surfer',
+        short_name: 'Sewer Surfer',
+        description: 'Flush a turd down the toilet and dodge rats, pipes and blockages in an endless sewer run.',
+        theme_color: '#0a0f0a',
+        background_color: '#0a0f0a',
         display: 'standalone',
         orientation: 'portrait',
         icons: [

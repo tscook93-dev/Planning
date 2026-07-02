@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main, claude/holiday-planner-app-gkq3zk]
+    branches: [main, claude/sewer-turd-runner-game-2k34k8]
   workflow_dispatch:
 
 permissions:
